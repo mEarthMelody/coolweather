@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvNowWeather"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:text="晴转多云"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvNowTemp"
+                android:text="0℃"
+                android:textColor="#fff"
+                android:textSize="70sp"
+                android:layout_below="@+id/tvNowWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/llmmm"
+                android:layout_below="@+id/tvNowTemp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNowMaxTemp"
+                    android:textColor="#fff"
+                    android:text="29"
+                    android:textSize="16sp"
+                    android:layout_marginRight="18dp"
+                    android:alpha="0.8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvNowMinTemp"
+                    android:textColor="#fff"
+                    android:text="22"
+                    android:alpha="0.4"
+                    android:textSize="16sp"
+                    android:layout_marginRight="27dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/tvNowTemp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNowToday"
+                    android:textColor="#fff"
+                    android:text="星期五"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:text="今天"
+                    android:textSize="16sp"
+                    android:alpha="0.7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTitleWeather"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:layout_alignBottom="@+id/llmmm"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

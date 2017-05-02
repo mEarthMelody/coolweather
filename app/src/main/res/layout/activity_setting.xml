@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivsettingbackground"
+        android:background="#66ccff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:text="设置"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"
+        android:textSize="26sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <Switch
+            android:text="启动自动刷新            "
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:checked="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/switch1" />
+        <Switch
+            android:text="后台更新                    "
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/switch2" />
+
+        <Switch
+            android:text="定时通知                    "
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:checked="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/switch3" />
+        
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibSetting"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btnback"
+        android:scaleType="centerCrop"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    
+
+</RelativeLayout>

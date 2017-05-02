@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvDailyDate"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivDaily"
+                android:layout_margin="10dp"
+                android:alpha="0.9"
+                android:layout_gravity="center_vertical"
+                android:layout_width="35dp"
+                android:scaleType="centerCrop"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/tvDailyMaxTemp"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyMinTemp"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.4"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWinddir"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWindsc"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWindspd"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyhum"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailypop"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailypres"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyvis"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyuv"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:alpha="0.5"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvDailyDate2"
+                android:text="08-30"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivDaily2"
+                android:layout_margin="10dp"
+                android:alpha="0.9"
+                android:layout_gravity="center_vertical"
+                android:layout_width="35dp"
+                android:scaleType="centerCrop"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/tvDailyMaxTemp2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyMinTemp2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.4"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWinddir2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWindsc2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyWindspd2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyhum2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailypop2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailypres2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyvis2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDailyuv2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:alpha="0.8"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

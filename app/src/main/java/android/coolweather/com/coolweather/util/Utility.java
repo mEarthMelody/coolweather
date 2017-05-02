@@ -1,13 +1,15 @@
 package android.coolweather.com.coolweather.util;
 
-import android.coolweather.com.coolweather.MyApplication;
 import android.coolweather.com.coolweather.db.City;
 import android.coolweather.com.coolweather.db.County;
 import android.coolweather.com.coolweather.db.Province;
+import android.coolweather.com.coolweather.gson.HeWeather;
 import android.text.TextUtils;
-import android.widget.Toast;
+
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
@@ -35,35 +37,33 @@ public class Utility {
                 return true;
             }catch(Exception e){
                 e.printStackTrace();
-                Toast.makeText(MyApplication.getContext(), "get json error", Toast.LENGTH_SHORT).show();
             }
         }
         return false;
     }
     public static boolean handleCityResponse(String response,int privateId){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try {
-                JSONArray jsonObjectCity = new JSONArray();
-                for(int i = 0; i<jsonObjectCity.length();i++){
-                    JSONObject jsonObject = jsonObjectCity.getJSONObject(i);
+                JSONArray allCities = new JSONArray(response);
+                for(int i = 0; i<allCities.length();i++){
+                    JSONObject cityObject = allCities.getJSONObject(i);
                     City city = new City();
-                    city.setCityName(jsonObject.getString("name"));
-                    city.setCityCode(jsonObject.getInt("id"));
+                    city.setCityName(cityObject.getString("name"));
+                    city.setCityCode(cityObject.getInt("id"));
                     city.setProvinceId(privateId);
                     city.save();
                 }
                 return true;
             }catch (Exception e){
                 e.printStackTrace();
-                Toast.makeText(MyApplication.getContext(), "get json error", Toast.LENGTH_SHORT).show();
             }
         }
         return false;
     }
     public static boolean handleCountryResponse(String response,int cityId){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try {
-                JSONArray jsonObjectCity = new JSONArray();
+                JSONArray jsonObjectCity = new JSONArray(response);
                 for(int i = 0; i<jsonObjectCity.length();i++){
                     JSONObject jsonObject = jsonObjectCity.getJSONObject(i);
                     County country = new County();
@@ -75,9 +75,20 @@ public class Utility {
                 return true;
             }catch (Exception e){
                 e.printStackTrace();
-                Toast.makeText(MyApplication.getContext(), "get json error", Toast.LENGTH_SHORT).show();
             }
         }
         return false;
+    }
+
+    public static HeWeather handleWeatherResponse(String response){
+        try{
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray jsonArray = jsonObject.getJSONArray("HeWeather5");
+            String weatherContent = jsonArray.getJSONObject(0).toString();
+            return new Gson().fromJson(weatherContent,HeWeather.class);
+        }catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

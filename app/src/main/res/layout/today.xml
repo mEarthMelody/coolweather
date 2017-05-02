@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="500dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:text="日出："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:text="日落："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:text="降雨概率："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:text="湿度："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:text="风速："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:text="体感温度："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:text="降雨量："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:text="气压："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:text="能见度："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:text="紫外线指数："
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="500dp">
+        <TextView
+            android:id="@+id/tvTodaysr"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTodayss"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:id="@+id/tvTodaypop"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTodayhum"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:id="@+id/tvTodayWindspd"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTodayfl"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:id="@+id/tvTodaypcpn"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTodaypres"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"></View>
+        <TextView
+            android:id="@+id/tvTodayvis"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTodayuv"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
